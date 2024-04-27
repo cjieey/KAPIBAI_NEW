@@ -1,0 +1,156 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    background-color: #A99382;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+/* Container Styles */  
+.box-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    width: 90%;
+    max-width: 550px;
+    height: 90vh;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Title Styles */
+.title-div {
+    background-color: #50281A;
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    height: 90px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    animation: rotateAndFadeIn 1s ease forwards;
+}
+
+.title {
+    color: #fff;
+    font-size: 1.5rem;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slideInTitleAndFadeIn 1s ease forwards;
+}
+
+
+/* Form Styles */
+.register-div {
+    text-align: center;
+    padding: 2rem;
+}
+
+.sub-title {
+    margin-bottom: 1rem;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.input-group input {
+    width: calc(50% - 0.5rem);
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input#age,
+.input-group input#address,
+.input-group input#username,
+.input-group input#password {
+    width: calc(100% - 0.5rem);
+}
+
+.input-group input#lastname {
+    margin-left: 0.5rem; 
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #50281A;
+}
+
+/* Button Styles */
+.signup-btn {
+    width: 100%;
+    background-color: #50281A;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #3c1f14;
+}
+
+/* Additional Styles */
+p {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+p .signin-btn{
+    color: #50281A;
+    text-decoration: none;
+}
+
+
+/* Keyframe Animations */
+@keyframes rotateAndFadeIn {
+    0% {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInTitleAndFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        margin-left: 2.5rem;
+    }
+}

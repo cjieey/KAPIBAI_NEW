@@ -1,0 +1,4 @@
+Sales Report for 2024-04-26
+
+Total Quantity Sold: 9
+Total Sales: 1575

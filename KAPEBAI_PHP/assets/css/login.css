@@ -1,0 +1,155 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #A99382;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box-container {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    width: 1000px;
+    height: 70vh;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.left-div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.right-div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.left-div .title {
+    color: #50281A;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    word-spacing: 5px;
+    transition: color 0.3s ease;
+}
+
+.left-div .sub-title {
+    color: #50281A;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.coffee-logo {
+    width:  350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-top: 25px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.right-div .small-box {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.login-title {
+    color: #50281A;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.small-box p{
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+form .login-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #50281A;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form .login-btn:hover {
+    background-color: #6c3f2d;
+}
+
+form .signup-btn {
+    margin-top: 10px;
+    margin-left: 75px;
+    font-size: 13px;
+    color: black;
+    border: none;
+    border-style: none;
+    background: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+form .signup-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+form .signup-btn a:hover {
+    color: #50281A;
+}
+
+form .signup-btn:hover {
+    transform: scale(1.1);
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-right: 160px;
+    transition: margin-right 0.3s ease;
+}
+
+span {
+    flex-grow: 1;
+    white-space: nowrap;
+    padding-left: .5rem;
+    padding-bottom: 10px;
+}
+
+/* Additional Transition for hover effect */
+.remember-me:hover span {
+    color: #50281A;
+}
